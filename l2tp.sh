@@ -223,16 +223,16 @@ preinstall_l2tp(){
     fi
     echo
     echo "Please enter IP-Range:"
-    read -p "(Default Range: 192.168.18):" iprange
-    [ -z ${iprange} ] && iprange="192.168.18"
+    read -p "(Default Range: 172.18.18):" iprange
+    [ -z ${iprange} ] && iprange="172.18.18"
 
     echo "Please enter PSK:"
-    read -p "(Default PSK: teddysun.com):" mypsk
-    [ -z ${mypsk} ] && mypsk="teddysun.com"
+    read -p "(Default PSK: v2wallvpn):" mypsk
+    [ -z ${mypsk} ] && mypsk="v2wallvpn"
 
     echo "Please enter Username:"
-    read -p "(Default Username: teddysun):" username
-    [ -z ${username} ] && username="teddysun"
+    read -p "(Default Username: vpnuser):" username
+    [ -z ${username} ] && username="vpnuser"
 
     password=`rand`
     echo "Please enter ${username}'s password:"
